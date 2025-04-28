@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/*...header section...*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/beach.jpg );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* padding: 30px 0; */
+    padding-top: 30px;
+}
+
+.container{
+    width: 90%;
+    height: 60px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0 30px;
+    border-radius: 30px;
+    border: 1px solid #03a038;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color: rgb(83, 79, 79);
+}
+
+ul{
+    display: none;
+}
+
+.menu-icon{
+    font-size: 25px;
+}
+
+.logo{
+    font-size: 25px;
+}
+
+/*.....center content....*/
+
+.hero-section .content{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.content h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/*....form...*/
+
+form{
+    position: absolute;
+    bottom: 30px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #70f9b0 0%, #fdf874 100%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: left;
+    padding: 30px;
+}
+
+.search-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-item label{
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.search-item input{
+    height: 30px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0 20px;
+    color: #5c5757;
+}
+
+.btn{
+    height: 30px;
+    padding: 0 35px;
+    margin-top: 20px;
+    /* border-radius: 30px; */
+    border: 0;
+    outline: none;
+    background-color: #03a038;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #0c6a2b;
+}
+
+/*.....Services....*/
+
+.services{
+    padding: 80px 0;
+    background-color: #e6f7ec;
+}
+
+.services h5{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.services h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.services .boxes{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.boxes .box{
+    background: linear-gradient(to top, #f1f0f0, #b8eecb);
+    padding: 40px;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.boxes .box img{
+    mix-blend-mode: multiply;
+}
+
+.boxes .box h2{
+    font-size: 24px;
+    margin: 20px;
+    font-weight: 700;
+}
+
+/*....destination....*/
+
+.destination{
+    background-color: #efd8d8;
+}
+
+.destination-card{
+    background-color: #fff;
+    margin: 30px 10px;
+    padding-bottom: 30px;
+    border: 0;
+}
+
+.destination-card:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.destination-card img{
+    width: 100%;
+}
+
+.destination-card h2{
+    margin: 20px 10px 0 20px;
+}
+
+.destination-card p{
+    margin: 10px 20px 20px 20px;
+}
+
+.destination-card a{
+    margin: 20px 10px 0 20px;
+    text-decoration: none;
+    background-color: #03a038;
+    color: #fff;
+    padding: 6px 15px;
+}
+
+.destination-card a:hover{
+    background-color: #0c6a2b;
+}
+
+footer{
+    width: 100%;
+    padding: 15px 0;
+    background-color: #03a038;
+    color: #ddd2d2;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media only screen and (min-width:750px) {
+    nav ul{
+        display: block;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .hero-section .content{
+        top: 30%;
+    }
+    
+    .content h1{
+        font-size: 50px;
+        color: #fff;
+    }
+    .content p{
+        font-size: 25px;
+        margin: 10px 0;
+        color: #fff;
+    }
+    form{
+        justify-content: center;
+    }
+    form .search-item input{
+        height: 40px;
+    }
+    .btn{
+        height: 40px;
+    }
+}
